@@ -1,0 +1,1 @@
+SkipPremiumArticles is an extension removing articles reserved for subscribers on news website such as lemonde.fr and lequipe.fr

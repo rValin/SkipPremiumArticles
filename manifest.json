@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Skip Premium Articles",
+  "version": "1.0",
+  "description": "This extension remove premium articles on news websites",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "permissions": ["tabs", "*://*.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.lequipe.fr/*"],
+      "js": ["lequipe.js"]
+    },
+    {
+      "matches": ["*://*.lemonde.fr/*"],
+      "js": ["lemonde.js"]
+    }
+  ]
+}
